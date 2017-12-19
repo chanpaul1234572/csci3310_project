@@ -141,6 +141,7 @@
                                     <outlet property="englishName" destination="xCh-Wj-IiN" id="93T-Th-cq3"/>
                                     <outlet property="imageOfTheThing" destination="a0w-9l-ttj" id="ei2-h2-D0p"/>
                                     <outlet property="translatedName" destination="ge2-T2-JBS" id="TS2-ci-Vef"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="ShowDetail" id="h9a-21-Oht"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -202,4 +203,7 @@
     <resources>
         <image name="Image" width="213" height="213"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="h9a-21-Oht"/>
+    </inferredMetricsTieBreakers>
 </document>

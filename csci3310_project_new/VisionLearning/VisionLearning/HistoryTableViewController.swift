@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import os.log
 
 
 class HistoryTableViewController: UITableViewController {
@@ -96,15 +97,36 @@ class HistoryTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
+     
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        super.prepare(for: segue, sender: sender)
+        switch(segue.identifier ?? ""){
+        case "Additem":
+            os_log("Adding a new meal.", log: OSLog.default, type: .debug)
+        case "ShowDetail":
+            guard let historyDetailViewController = segue.destination as? ViewController else{
+                fatalError("Unexpected destination: \(segue.destination)")
+            }
+            guard let selectedHistoryCell = sender as? HIstoryTableViewCell else{
+                fatalError("Unexpected sender: \(sender)")
+            }
+            guard let indexPath = tableView.indexPath(for: selectedHistoryCell) else{
+                fatalError("The selected cell is not being displayed by the table")
+            }
+            
+            let selectedHistory = things[indexPath.row]
+            historyDetailViewController.thing = selectedHistory
+        default:
+            fatalError("Unexpected Segue Identifier; \(segue.identifier)")
+        }
     }
-    */
+    
     //MARK: Private Methods
     private func loaddata(){
         let imageOfTheThing1 = UIImage(named: "Lemon")
@@ -131,9 +153,17 @@ class HistoryTableViewController: UITableViewController {
     //MARK: Actions
     @IBAction func unwindToHistory(sender: UIStoryboardSegue){
         if let sourceViewController = sender.source as? ViewController, let thing = sourceViewController.thing{
+            if let selectedIndexPath = tableView.indexPathForSelectedRow{
+                things[selectedIndexPath.row] = thing
+                tableView.reloadRows(at: [selectedIndexPath], with: .none)
+            }
+            else{
+            
             let newIndexPath = IndexPath(row: things.count, section: 0)
             things.append(thing)
             tableView.insertRows(at: [newIndexPath], with: .automatic)
+        
+            }
         }
     }
     

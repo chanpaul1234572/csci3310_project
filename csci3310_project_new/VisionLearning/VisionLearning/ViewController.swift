@@ -28,7 +28,14 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UITextFi
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-    }
+        //englishtext.delegate = self
+        if let thing = thing{
+            imageView.image = thing.photo
+            classifier.text = thing.translatedName
+            englishtext = thing.englishName
+            text = thing.translatedName
+        }
+        updateSaveButtonState()    }
     
     override func viewWillAppear(_ animated: Bool) {
         model = Inceptionv3()
@@ -75,6 +82,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UITextFi
                 self.result1 = "\(result)"
             }
         }
+        updateSaveButtonState()
     }
     
     @IBAction func cancel(_ sender: UIBarButtonItem) {
@@ -99,7 +107,20 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UITextFi
         thing = Thing(englishName: englishName, photo: imageOfTheThing, translatedName: translatedName)
         
     }
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        saveButton.isEnabled = false;
+    }
     
+    private func updateSaveButtonState(){
+        print("Test")
+        let text1 = englishtext ?? ""
+        print(englishtext)
+        saveButton.isEnabled = !text1.isEmpty;
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        updateSaveButtonState()
+    }
     
 }
 
@@ -148,7 +169,6 @@ extension ViewController: UIImagePickerControllerDelegate {
         guard let prediction = try? model.prediction(image: pixelBuffer!) else {
             return
         }
-        
         classifier.text = "\(prediction.classLabel)"
         englishtext = prediction.classLabel
         text = englishtext
