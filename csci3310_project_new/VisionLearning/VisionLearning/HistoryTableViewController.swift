@@ -18,7 +18,12 @@ class HistoryTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.leftBarButtonItem = editButtonItem
-        loaddata()
+        if let savedThings = loadThings(){
+            things += savedThings
+        }
+        else{
+            loaddata()
+        }
         tableView.delegate = self
         
         //tableView.dataSource = self
@@ -78,6 +83,7 @@ class HistoryTableViewController: UITableViewController {
         if editingStyle == .delete {
             // Delete the row from the data source
             things.remove(at: indexPath.row)
+            saveThings()
             tableView.deleteRows(at: [indexPath], with: .fade)
             
         } else if editingStyle == .insert {
@@ -168,7 +174,22 @@ class HistoryTableViewController: UITableViewController {
             tableView.insertRows(at: [newIndexPath], with: .automatic)
         
             }
+            saveThings()
         }
+    }
+    
+    private func saveThings(){
+        let isSuccessfulSave = NSKeyedArchiver.archiveRootObject(things, toFile: Thing.ArchiveURL.path)
+        if isSuccessfulSave{
+            os_log("Things successfully saved.", log: OSLog.default, type: .debug)
+        }
+        else{
+            os_log("Failed to save Things...", log: OSLog.default, type: .error)
+        }
+    }
+    
+    private func loadThings() -> [Thing]? {
+        return NSKeyedUnarchiver.unarchiveObject(withFile: Thing.ArchiveURL.path) as? [Thing]
     }
     
 }

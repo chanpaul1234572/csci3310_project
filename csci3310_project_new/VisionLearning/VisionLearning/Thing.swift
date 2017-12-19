@@ -8,8 +8,9 @@
 
 import Foundation
 import UIKit
+import os.log
 
-class Thing{
+class Thing : NSObject, NSCoding{
     //MARK: Properties
     var englishName: String
     var photo: UIImage?
@@ -29,4 +30,32 @@ class Thing{
         self.photo = photo
         self.translatedName = translatedName
     }
+    struct PropertyKey{
+        static let englishName = "englishName"
+        static let imageOfTheThing = "imageOfTheThing"
+        static let translatedName = "translatedName"
+    }
+    func encode(with aCoder: NSCoder){
+        aCoder.encode(englishName, forKey: PropertyKey.englishName)
+        aCoder.encode(photo, forKey: PropertyKey.imageOfTheThing)
+        aCoder.encode(translatedName, forKey: PropertyKey.translatedName)
+    }
+    
+    required convenience init?(coder aDecoder: NSCoder) {
+        guard let englishName = aDecoder.decodeObject(forKey: PropertyKey.englishName) as? String else{
+            os_log("Unable to decode")
+            return nil
+        }
+        let imageOfTheThing = aDecoder.decodeObject(forKey: PropertyKey.imageOfTheThing) as? UIImage
+        
+        let translatedName = aDecoder.decodeObject(forKey: PropertyKey.translatedName) as! String
+        
+        self.init(englishName: englishName, photo: imageOfTheThing, translatedName: translatedName)
+    }
+    
+    //MARK: Archiving Paths
+    
+    static let DocumentsDirectory = FileManager().urls(for: .documentDirectory, in: .userDomainMask).first!
+    static let ArchiveURL = DocumentsDirectory.appendingPathComponent("things")
+    
 }
