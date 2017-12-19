@@ -127,5 +127,15 @@ class HistoryTableViewController: UITableViewController {
         print(things.count)
         
     }
+    
+    //MARK: Actions
+    @IBAction func unwindToHistory(sender: UIStoryboardSegue){
+        if let sourceViewController = sender.source as? ViewController, let thing = sourceViewController.thing{
+            let newIndexPath = IndexPath(row: things.count, section: 0)
+            things.append(thing)
+            tableView.insertRows(at: [newIndexPath], with: .automatic)
+        }
+    }
+    
 
 }

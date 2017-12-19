@@ -8,15 +8,21 @@
 
 import UIKit
 import CoreML
+import os.log
 
-class ViewController: UIViewController, UINavigationControllerDelegate {
+
+class ViewController: UIViewController, UINavigationControllerDelegate, UITextFieldDelegate{
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var classifier: UILabel!
     @IBOutlet weak var fromLanguage: UITextField!
     @IBOutlet weak var toLanguage: UITextField!
+    @IBOutlet weak var saveButton: UIBarButtonItem!
     
-    var text: String!
+    var thing:Thing?
+    var englishtext: String!
+    var text:String!
+    var result1: String!
     var model: Inceptionv3!
     
     override func viewDidLoad() {
@@ -32,7 +38,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    //MARK: Action
     @IBAction func camera(_ sender: Any) {
         
         if !UIImagePickerController.isSourceTypeAvailable(.camera) {
@@ -58,6 +64,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
         let translator = ROGoogleTranslate()
         translator.apiKey = "AIzaSyDRPYAnuiL9K7-Be3JE1888J60VgTdYHR0" // Add your API Key here
         
+        
         var params = ROGoogleTranslateParams()
         params.source = fromLanguage.text ?? "en"
         params.target = toLanguage.text ?? "zh-TW"
@@ -65,6 +72,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
         translator.translate(params: params) { (result) in
             DispatchQueue.main.async {
                 self.classifier.text = "\(result)"
+                self.result1 = "\(result)"
             }
         }
     }
@@ -73,12 +81,33 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
         dismiss(animated: true, completion: nil)
         print("cancel called\n")
     }
+    
+    //MARK: NAvigation
+    
+    override func prepare (for segue: UIStoryboardSegue, sender: Any?){
+        super.prepare(for: segue, sender: sender)
+        
+        guard let button = sender as? UIBarButtonItem, button == saveButton else{
+            os_log("The save button was not pressed, cancelling", log:OSLog.default, type: .debug)
+            return
+        }
+        
+        let englishName = englishtext ?? ""
+        let imageOfTheThing = imageView.image
+        let translatedName = result1 ?? ""
+        
+        thing = Thing(englishName: englishName, photo: imageOfTheThing, translatedName: translatedName)
+        
+    }
+    
+    
 }
 
 extension ViewController: UIImagePickerControllerDelegate {
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         dismiss(animated: true, completion: nil)
     }
+    
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         
@@ -121,7 +150,7 @@ extension ViewController: UIImagePickerControllerDelegate {
         }
         
         classifier.text = "\(prediction.classLabel)"
-        text = prediction.classLabel
-        
+        englishtext = prediction.classLabel
+        text = englishtext
     }
 }

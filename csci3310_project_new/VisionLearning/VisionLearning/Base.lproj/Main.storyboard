@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Core ML-->
+        <!--Translation-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VisionLearning" customModuleProvider="target" sceneMemberID="viewController">
@@ -62,12 +62,19 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Kwr-9O-NXr"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Core ML" id="04B-Lr-BQ8">
-                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="cancel" id="xJK-1L-rCy">
-                            <connections>
-                                <action selector="cancel:" destination="BYZ-38-t0r" id="hk7-Dy-wTB"/>
-                            </connections>
-                        </barButtonItem>
+                    <navigationItem key="navigationItem" title="Translation" id="04B-Lr-BQ8">
+                        <leftBarButtonItems>
+                            <barButtonItem style="plain" systemItem="cancel" id="xJK-1L-rCy">
+                                <connections>
+                                    <action selector="cancel:" destination="BYZ-38-t0r" id="hk7-Dy-wTB"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="save" id="5t1-OZ-cus">
+                                <connections>
+                                    <segue destination="1Qp-FS-eih" kind="unwind" unwindAction="unwindToHistoryWithSender:" id="kRF-Uy-FhJ"/>
+                                </connections>
+                            </barButtonItem>
+                        </leftBarButtonItems>
                         <rightBarButtonItems>
                             <barButtonItem title="Library" style="plain" id="QWq-Ce-IzD">
                                 <connections>
@@ -85,10 +92,12 @@
                         <outlet property="classifier" destination="ey9-UG-cA0" id="6tX-Tf-CTf"/>
                         <outlet property="fromLanguage" destination="VAB-5j-dPS" id="8GJ-a9-cvR"/>
                         <outlet property="imageView" destination="wDo-2s-5HP" id="Rub-1I-zjv"/>
+                        <outlet property="saveButton" destination="5t1-OZ-cus" id="Doc-Di-gI6"/>
                         <outlet property="toLanguage" destination="vxK-sI-Zkv" id="Qdx-V4-I28"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="1Qp-FS-eih" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1464.8" y="115.59220389805098"/>
         </scene>
