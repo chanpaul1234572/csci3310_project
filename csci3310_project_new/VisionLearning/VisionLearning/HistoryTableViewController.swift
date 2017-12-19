@@ -17,8 +17,10 @@ class HistoryTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.leftBarButtonItem = editButtonItem
         loaddata()
         tableView.delegate = self
+        
         //tableView.dataSource = self
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -70,17 +72,19 @@ class HistoryTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             // Delete the row from the data source
+            things.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
+            
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
-    */
+    
 
     /*
     // Override to support rearranging the table view.
@@ -107,7 +111,7 @@ class HistoryTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
         super.prepare(for: segue, sender: sender)
         switch(segue.identifier ?? ""){
-        case "Additem":
+        case "AddItem":
             os_log("Adding a new meal.", log: OSLog.default, type: .debug)
         case "ShowDetail":
             guard let historyDetailViewController = segue.destination as? ViewController else{
@@ -167,5 +171,4 @@ class HistoryTableViewController: UITableViewController {
         }
     }
     
-
 }
