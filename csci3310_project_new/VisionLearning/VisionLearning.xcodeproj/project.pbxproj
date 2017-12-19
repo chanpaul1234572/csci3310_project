@@ -1,0 +1,447 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B408E1801FE4EEBA00027F11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B408E17F1FE4EEBA00027F11 /* AppDelegate.swift */; };
+		B408E1851FE4EEBA00027F11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B408E1831FE4EEBA00027F11 /* Main.storyboard */; };
+		B408E1881FE4EEBA00027F11 /* VisionLearning.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B408E1861FE4EEBA00027F11 /* VisionLearning.xcdatamodeld */; };
+		B408E18A1FE4EEBA00027F11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B408E1891FE4EEBA00027F11 /* Assets.xcassets */; };
+		B408E18D1FE4EEBA00027F11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B408E18B1FE4EEBA00027F11 /* LaunchScreen.storyboard */; };
+		B408E1981FE4F9B600027F11 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B408E1811FE4EEBA00027F11 /* ViewController.swift */; };
+		B408E1A01FE52A7900027F11 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B408E19F1FE52A7900027F11 /* Inceptionv3.mlmodel */; };
+		B443AD4A1FE90EBA008699CF /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B443AD491FE90EBA008699CF /* HistoryTableViewController.swift */; };
+		B4A6630A1FE7BF1900D9F71C /* ROGoogleTranslate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A663091FE7BF1800D9F71C /* ROGoogleTranslate.swift */; };
+		B4A6630C1FE8300A00D9F71C /* HIstoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A6630B1FE8300A00D9F71C /* HIstoryTableViewCell.swift */; };
+		B4A6630E1FE8470900D9F71C /* Thing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A6630D1FE8470900D9F71C /* Thing.swift */; };
+		C56E76DB19DD8D667FE4D9E6 /* Pods_VisionLearning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB893476E4A55E21B43500EB /* Pods_VisionLearning.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3ADA1CBD43AD380E84607685 /* Pods-VisionLearning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VisionLearning.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VisionLearning/Pods-VisionLearning.debug.xcconfig"; sourceTree = "<group>"; };
+		B408E17C1FE4EEBA00027F11 /* VisionLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisionLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B408E17F1FE4EEBA00027F11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B408E1811FE4EEBA00027F11 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B408E1841FE4EEBA00027F11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B408E1871FE4EEBA00027F11 /* VisionLearning.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VisionLearning.xcdatamodel; sourceTree = "<group>"; };
+		B408E1891FE4EEBA00027F11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B408E18C1FE4EEBA00027F11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B408E18E1FE4EEBA00027F11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B408E19F1FE52A7900027F11 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
+		B443AD491FE90EBA008699CF /* HistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
+		B4A663091FE7BF1800D9F71C /* ROGoogleTranslate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ROGoogleTranslate.swift; sourceTree = "<group>"; };
+		B4A6630B1FE8300A00D9F71C /* HIstoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HIstoryTableViewCell.swift; sourceTree = "<group>"; };
+		B4A6630D1FE8470900D9F71C /* Thing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thing.swift; sourceTree = "<group>"; };
+		BE3F0D68B05B4552687F9ED3 /* Pods-VisionLearning.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VisionLearning.release.xcconfig"; path = "Pods/Target Support Files/Pods-VisionLearning/Pods-VisionLearning.release.xcconfig"; sourceTree = "<group>"; };
+		DB893476E4A55E21B43500EB /* Pods_VisionLearning.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VisionLearning.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B408E1791FE4EEBA00027F11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C56E76DB19DD8D667FE4D9E6 /* Pods_VisionLearning.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		92BDE2061D4E5052E7CDBE1B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB893476E4A55E21B43500EB /* Pods_VisionLearning.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B408E1731FE4EEBA00027F11 = {
+			isa = PBXGroup;
+			children = (
+				B408E19F1FE52A7900027F11 /* Inceptionv3.mlmodel */,
+				B408E17E1FE4EEBA00027F11 /* VisionLearning */,
+				B408E17D1FE4EEBA00027F11 /* Products */,
+				DFC2FF6E39E7A626E9DCD0E3 /* Pods */,
+				92BDE2061D4E5052E7CDBE1B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B408E17D1FE4EEBA00027F11 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B408E17C1FE4EEBA00027F11 /* VisionLearning.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B408E17E1FE4EEBA00027F11 /* VisionLearning */ = {
+			isa = PBXGroup;
+			children = (
+				B408E17F1FE4EEBA00027F11 /* AppDelegate.swift */,
+				B408E1891FE4EEBA00027F11 /* Assets.xcassets */,
+				B408E18E1FE4EEBA00027F11 /* Info.plist */,
+				B408E18B1FE4EEBA00027F11 /* LaunchScreen.storyboard */,
+				B408E1831FE4EEBA00027F11 /* Main.storyboard */,
+				B408E1811FE4EEBA00027F11 /* ViewController.swift */,
+				B4A663091FE7BF1800D9F71C /* ROGoogleTranslate.swift */,
+				B4A6630B1FE8300A00D9F71C /* HIstoryTableViewCell.swift */,
+				B443AD491FE90EBA008699CF /* HistoryTableViewController.swift */,
+				B4A6630D1FE8470900D9F71C /* Thing.swift */,
+				B408E1861FE4EEBA00027F11 /* VisionLearning.xcdatamodeld */,
+			);
+			path = VisionLearning;
+			sourceTree = "<group>";
+		};
+		DFC2FF6E39E7A626E9DCD0E3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3ADA1CBD43AD380E84607685 /* Pods-VisionLearning.debug.xcconfig */,
+				BE3F0D68B05B4552687F9ED3 /* Pods-VisionLearning.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B408E17B1FE4EEBA00027F11 /* VisionLearning */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B408E1911FE4EEBA00027F11 /* Build configuration list for PBXNativeTarget "VisionLearning" */;
+			buildPhases = (
+				FB2B826BBE1303BA06043701 /* [CP] Check Pods Manifest.lock */,
+				B408E1781FE4EEBA00027F11 /* Sources */,
+				B408E1791FE4EEBA00027F11 /* Frameworks */,
+				B408E17A1FE4EEBA00027F11 /* Resources */,
+				39AB17E939D5C2C8F876B916 /* [CP] Embed Pods Frameworks */,
+				3B849561A899F155266F8646 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VisionLearning;
+			productName = VisionLearning;
+			productReference = B408E17C1FE4EEBA00027F11 /* VisionLearning.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B408E1741FE4EEBA00027F11 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Chan Paul";
+				TargetAttributes = {
+					B408E17B1FE4EEBA00027F11 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B408E1771FE4EEBA00027F11 /* Build configuration list for PBXProject "VisionLearning" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B408E1731FE4EEBA00027F11;
+			productRefGroup = B408E17D1FE4EEBA00027F11 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B408E17B1FE4EEBA00027F11 /* VisionLearning */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B408E17A1FE4EEBA00027F11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B408E18D1FE4EEBA00027F11 /* LaunchScreen.storyboard in Resources */,
+				B408E18A1FE4EEBA00027F11 /* Assets.xcassets in Resources */,
+				B408E1851FE4EEBA00027F11 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		39AB17E939D5C2C8F876B916 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-VisionLearning/Pods-VisionLearning-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ROGoogleTranslate/ROGoogleTranslate.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ROGoogleTranslate.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VisionLearning/Pods-VisionLearning-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B849561A899F155266F8646 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VisionLearning/Pods-VisionLearning-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB2B826BBE1303BA06043701 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VisionLearning-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B408E1781FE4EEBA00027F11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B443AD4A1FE90EBA008699CF /* HistoryTableViewController.swift in Sources */,
+				B408E1981FE4F9B600027F11 /* ViewController.swift in Sources */,
+				B408E1A01FE52A7900027F11 /* Inceptionv3.mlmodel in Sources */,
+				B4A6630C1FE8300A00D9F71C /* HIstoryTableViewCell.swift in Sources */,
+				B4A6630A1FE7BF1900D9F71C /* ROGoogleTranslate.swift in Sources */,
+				B408E1881FE4EEBA00027F11 /* VisionLearning.xcdatamodeld in Sources */,
+				B408E1801FE4EEBA00027F11 /* AppDelegate.swift in Sources */,
+				B4A6630E1FE8470900D9F71C /* Thing.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B408E1831FE4EEBA00027F11 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B408E1841FE4EEBA00027F11 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B408E18B1FE4EEBA00027F11 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B408E18C1FE4EEBA00027F11 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B408E18F1FE4EEBA00027F11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B408E1901FE4EEBA00027F11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B408E1921FE4EEBA00027F11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3ADA1CBD43AD380E84607685 /* Pods-VisionLearning.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PG59CUA2EQ;
+				INFOPLIST_FILE = VisionLearning/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.paulchan.test.VisionLearning;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B408E1931FE4EEBA00027F11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE3F0D68B05B4552687F9ED3 /* Pods-VisionLearning.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PG59CUA2EQ;
+				INFOPLIST_FILE = VisionLearning/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.paulchan.test.VisionLearning;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B408E1771FE4EEBA00027F11 /* Build configuration list for PBXProject "VisionLearning" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B408E18F1FE4EEBA00027F11 /* Debug */,
+				B408E1901FE4EEBA00027F11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B408E1911FE4EEBA00027F11 /* Build configuration list for PBXNativeTarget "VisionLearning" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B408E1921FE4EEBA00027F11 /* Debug */,
+				B408E1931FE4EEBA00027F11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B408E1861FE4EEBA00027F11 /* VisionLearning.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B408E1871FE4EEBA00027F11 /* VisionLearning.xcdatamodel */,
+			);
+			currentVersion = B408E1871FE4EEBA00027F11 /* VisionLearning.xcdatamodel */;
+			path = VisionLearning.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B408E1741FE4EEBA00027F11 /* Project object */;
+}

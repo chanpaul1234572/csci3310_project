@@ -1,0 +1,564 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F0FFFC8877EE24BB1E1AF73CB97143A /* Pods-VisionLearning-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 849E0DF5811F81BCDE445A3C81AAC676 /* Pods-VisionLearning-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		670FBB49832B16F11B475674804B8460 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D7E984AA2ED06FC886024282B47207 /* Foundation.framework */; };
+		6EBEBFAD676A963FAEC6FFE99395E439 /* ROGoogleTranslate-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 444C4C66AD33EAF6198EA5C3BA0CBA2A /* ROGoogleTranslate-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		725CBDD7A5AB37AE030E627B347187CC /* ROGoogleTranslate-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 60AAE76D3D6BF3F9C676DCECA5B3BCCE /* ROGoogleTranslate-dummy.m */; };
+		7993A587F2276BE2902F4A29050CBCDE /* ROGoogleTranslate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB4B288660FE5FB78D0A87C51C3C829 /* ROGoogleTranslate.swift */; };
+		8FA445ADB3726380C2B00AF948108037 /* Pods-VisionLearning-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA4FEF61BD52F5B6472DF53530BCFAD /* Pods-VisionLearning-dummy.m */; };
+		93F8DF29B7C65E487DBD9ED119F7B10A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D7E984AA2ED06FC886024282B47207 /* Foundation.framework */; };
+		A755C7A6F77D7D8158E85648B2EB395E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2AF9EC704AAD470CAC8FE0D05A5430B /* SystemConfiguration.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		37F146267A3DF525572E5531B78E4FF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1CC0D59EF7B4BD562C4F90D0C8328F7;
+			remoteInfo = ROGoogleTranslate;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A0D2392764A028E90DDB76C9B299831 /* ROGoogleTranslate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ROGoogleTranslate.framework; path = ROGoogleTranslate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AAB81CD1F50AD5D9DBB65B8CD78759D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FB4B288660FE5FB78D0A87C51C3C829 /* ROGoogleTranslate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ROGoogleTranslate.swift; path = Source/ROGoogleTranslate.swift; sourceTree = "<group>"; };
+		444C4C66AD33EAF6198EA5C3BA0CBA2A /* ROGoogleTranslate-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ROGoogleTranslate-umbrella.h"; sourceTree = "<group>"; };
+		4B17EC9E14875767C33806A530383256 /* Pods-VisionLearning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VisionLearning.debug.xcconfig"; sourceTree = "<group>"; };
+		59B29330F385E7BC1E9ECE8D9E2A41ED /* Pods-VisionLearning.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VisionLearning.release.xcconfig"; sourceTree = "<group>"; };
+		60AAE76D3D6BF3F9C676DCECA5B3BCCE /* ROGoogleTranslate-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ROGoogleTranslate-dummy.m"; sourceTree = "<group>"; };
+		6CF90356EBE9808F34C5CC3A09B0542F /* Pods-VisionLearning-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VisionLearning-acknowledgements.plist"; sourceTree = "<group>"; };
+		801422DEDE4398E4F2D6D348373448C3 /* Pods-VisionLearning-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VisionLearning-frameworks.sh"; sourceTree = "<group>"; };
+		849E0DF5811F81BCDE445A3C81AAC676 /* Pods-VisionLearning-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VisionLearning-umbrella.h"; sourceTree = "<group>"; };
+		8A586ACD6E3A935E9A95A9330BB2FAA2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FA90D5A8E9292789444FA96263ED764 /* ROGoogleTranslate-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ROGoogleTranslate-prefix.pch"; sourceTree = "<group>"; };
+		9009FEC07716C5B553958589EA764B12 /* Pods-VisionLearning-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VisionLearning-resources.sh"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		97D7E984AA2ED06FC886024282B47207 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		9C815CC9154949A80A25EEB33EC1C510 /* Pods-VisionLearning.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-VisionLearning.modulemap"; sourceTree = "<group>"; };
+		BBB21869D984D0962CB1A8CEAFD4D3C1 /* Pods-VisionLearning-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VisionLearning-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CFA4FEF61BD52F5B6472DF53530BCFAD /* Pods-VisionLearning-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VisionLearning-dummy.m"; sourceTree = "<group>"; };
+		D18B2E9E96E6BB8AC284FE3E94096921 /* Pods_VisionLearning.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_VisionLearning.framework; path = "Pods-VisionLearning.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D50595748F6F789F28E18A1F65ED8033 /* ROGoogleTranslate.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ROGoogleTranslate.xcconfig; sourceTree = "<group>"; };
+		E1ED2B173991E04D3F842A80627A6D71 /* ROGoogleTranslate.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ROGoogleTranslate.modulemap; sourceTree = "<group>"; };
+		F2AF9EC704AAD470CAC8FE0D05A5430B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		68EB84592E8CAB6EBF1191A87D982797 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93F8DF29B7C65E487DBD9ED119F7B10A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9075718392EE16972A5FE9873355862C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				670FBB49832B16F11B475674804B8460 /* Foundation.framework in Frameworks */,
+				A755C7A6F77D7D8158E85648B2EB395E /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2143DD30FBADF103FB9A6B25F05CBAC1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				36770070BC707429009378979F87F3DD /* ROGoogleTranslate */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		36770070BC707429009378979F87F3DD /* ROGoogleTranslate */ = {
+			isa = PBXGroup;
+			children = (
+				1FB4B288660FE5FB78D0A87C51C3C829 /* ROGoogleTranslate.swift */,
+				F16F99D6EB0C07D1ADF4F2B04535DCC8 /* Support Files */,
+			);
+			name = ROGoogleTranslate;
+			path = ROGoogleTranslate;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E7E283C74B7E79D37D9BAAFF277942F5 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		549F50C4840654BCD415E505F2D9A360 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D18B2E9E96E6BB8AC284FE3E94096921 /* Pods_VisionLearning.framework */,
+				0A0D2392764A028E90DDB76C9B299831 /* ROGoogleTranslate.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		67A448598FF3FAB07A0FABFC7CAADFDF /* Pods-VisionLearning */ = {
+			isa = PBXGroup;
+			children = (
+				0AAB81CD1F50AD5D9DBB65B8CD78759D /* Info.plist */,
+				9C815CC9154949A80A25EEB33EC1C510 /* Pods-VisionLearning.modulemap */,
+				BBB21869D984D0962CB1A8CEAFD4D3C1 /* Pods-VisionLearning-acknowledgements.markdown */,
+				6CF90356EBE9808F34C5CC3A09B0542F /* Pods-VisionLearning-acknowledgements.plist */,
+				CFA4FEF61BD52F5B6472DF53530BCFAD /* Pods-VisionLearning-dummy.m */,
+				801422DEDE4398E4F2D6D348373448C3 /* Pods-VisionLearning-frameworks.sh */,
+				9009FEC07716C5B553958589EA764B12 /* Pods-VisionLearning-resources.sh */,
+				849E0DF5811F81BCDE445A3C81AAC676 /* Pods-VisionLearning-umbrella.h */,
+				4B17EC9E14875767C33806A530383256 /* Pods-VisionLearning.debug.xcconfig */,
+				59B29330F385E7BC1E9ECE8D9E2A41ED /* Pods-VisionLearning.release.xcconfig */,
+			);
+			name = "Pods-VisionLearning";
+			path = "Target Support Files/Pods-VisionLearning";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				2143DD30FBADF103FB9A6B25F05CBAC1 /* Pods */,
+				549F50C4840654BCD415E505F2D9A360 /* Products */,
+				B9FE4DF68E5554FE11B33A52442AF3A1 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		B9FE4DF68E5554FE11B33A52442AF3A1 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				67A448598FF3FAB07A0FABFC7CAADFDF /* Pods-VisionLearning */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		E7E283C74B7E79D37D9BAAFF277942F5 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				97D7E984AA2ED06FC886024282B47207 /* Foundation.framework */,
+				F2AF9EC704AAD470CAC8FE0D05A5430B /* SystemConfiguration.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F16F99D6EB0C07D1ADF4F2B04535DCC8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8A586ACD6E3A935E9A95A9330BB2FAA2 /* Info.plist */,
+				E1ED2B173991E04D3F842A80627A6D71 /* ROGoogleTranslate.modulemap */,
+				D50595748F6F789F28E18A1F65ED8033 /* ROGoogleTranslate.xcconfig */,
+				60AAE76D3D6BF3F9C676DCECA5B3BCCE /* ROGoogleTranslate-dummy.m */,
+				8FA90D5A8E9292789444FA96263ED764 /* ROGoogleTranslate-prefix.pch */,
+				444C4C66AD33EAF6198EA5C3BA0CBA2A /* ROGoogleTranslate-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ROGoogleTranslate";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6C05F70D1DABBCD5D0E99C6D444FFF12 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F0FFFC8877EE24BB1E1AF73CB97143A /* Pods-VisionLearning-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74BED66159971EA5C8C9922C79C1F1E5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EBEBFAD676A963FAEC6FFE99395E439 /* ROGoogleTranslate-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		266F7070CF2FC7098AA022B73DE2D84A /* Pods-VisionLearning */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89E6CD599F8F9BC9B10F3E640C105B01 /* Build configuration list for PBXNativeTarget "Pods-VisionLearning" */;
+			buildPhases = (
+				6E57FDD4C1C158D7D1C09ED64A59539B /* Sources */,
+				68EB84592E8CAB6EBF1191A87D982797 /* Frameworks */,
+				6C05F70D1DABBCD5D0E99C6D444FFF12 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0567C507BBFDB46E08394C66E770679 /* PBXTargetDependency */,
+			);
+			name = "Pods-VisionLearning";
+			productName = "Pods-VisionLearning";
+			productReference = D18B2E9E96E6BB8AC284FE3E94096921 /* Pods_VisionLearning.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F1CC0D59EF7B4BD562C4F90D0C8328F7 /* ROGoogleTranslate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E64390ADB2E308712D3BD64874C93B3 /* Build configuration list for PBXNativeTarget "ROGoogleTranslate" */;
+			buildPhases = (
+				5276CFE32597A866A39E3BA7E3B97A22 /* Sources */,
+				9075718392EE16972A5FE9873355862C /* Frameworks */,
+				74BED66159971EA5C8C9922C79C1F1E5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ROGoogleTranslate;
+			productName = ROGoogleTranslate;
+			productReference = 0A0D2392764A028E90DDB76C9B299831 /* ROGoogleTranslate.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 549F50C4840654BCD415E505F2D9A360 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				266F7070CF2FC7098AA022B73DE2D84A /* Pods-VisionLearning */,
+				F1CC0D59EF7B4BD562C4F90D0C8328F7 /* ROGoogleTranslate */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5276CFE32597A866A39E3BA7E3B97A22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				725CBDD7A5AB37AE030E627B347187CC /* ROGoogleTranslate-dummy.m in Sources */,
+				7993A587F2276BE2902F4A29050CBCDE /* ROGoogleTranslate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E57FDD4C1C158D7D1C09ED64A59539B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FA445ADB3726380C2B00AF948108037 /* Pods-VisionLearning-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C0567C507BBFDB46E08394C66E770679 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ROGoogleTranslate;
+			target = F1CC0D59EF7B4BD562C4F90D0C8328F7 /* ROGoogleTranslate */;
+			targetProxy = 37F146267A3DF525572E5531B78E4FF5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		08C0A0F778EDDBF04A610F10B138A8E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B17EC9E14875767C33806A530383256 /* Pods-VisionLearning.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-VisionLearning/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VisionLearning/Pods-VisionLearning.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_VisionLearning;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		12C4B864767C59600DBFA238F1E2F8BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		21FD6A2976BCC07F15885FF53C7B83FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D50595748F6F789F28E18A1F65ED8033 /* ROGoogleTranslate.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ROGoogleTranslate/ROGoogleTranslate-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ROGoogleTranslate/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ROGoogleTranslate/ROGoogleTranslate.modulemap";
+				PRODUCT_NAME = ROGoogleTranslate;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		59F0302F2371FCC6B73EF0A418D40734 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		72003A5B43D565EE40FD6525EAA6FAAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59B29330F385E7BC1E9ECE8D9E2A41ED /* Pods-VisionLearning.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-VisionLearning/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VisionLearning/Pods-VisionLearning.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_VisionLearning;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E7A621DC0578123D6F85407A5E75BCE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D50595748F6F789F28E18A1F65ED8033 /* ROGoogleTranslate.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ROGoogleTranslate/ROGoogleTranslate-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ROGoogleTranslate/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ROGoogleTranslate/ROGoogleTranslate.modulemap";
+				PRODUCT_NAME = ROGoogleTranslate;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59F0302F2371FCC6B73EF0A418D40734 /* Debug */,
+				12C4B864767C59600DBFA238F1E2F8BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E64390ADB2E308712D3BD64874C93B3 /* Build configuration list for PBXNativeTarget "ROGoogleTranslate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21FD6A2976BCC07F15885FF53C7B83FB /* Debug */,
+				E7A621DC0578123D6F85407A5E75BCE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89E6CD599F8F9BC9B10F3E640C105B01 /* Build configuration list for PBXNativeTarget "Pods-VisionLearning" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08C0A0F778EDDBF04A610F10B138A8E7 /* Debug */,
+				72003A5B43D565EE40FD6525EAA6FAAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

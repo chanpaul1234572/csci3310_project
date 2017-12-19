@@ -1,0 +1,25 @@
+# xcode & objective-c noise
+build
+*.pbxuser
+*.mode*
+*.perspective*
+*~.nib
+*.so
+.swift-version
+
+# Vim
+*.swp
+
+# old skool
+.svn
+
+# osx noise
+.DS_Store
+profile
+
+# editor specific (emacs-alike)
+\#*\#
+*~
+
+TDBadgedCell.xcodeproj/project.xcworkspace
+TDBadgedCell.xcodeproj/xcuserdata
